@@ -1,0 +1,265 @@
+body{
+    background-color: #ef5350;
+    background-size: 100%;
+    padding: 20px;
+}
+#logo{
+    position: relative;
+    z-index: 30;
+    animation: logo 6s ease;
+    animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+@keyframes logo {
+    75%{
+        content: url("assets/logo-night.png");
+    }
+    100%{
+        content: url("assets/logo-night.png");
+    }
+}
+
+
+.big-container{
+    height: auto;
+    background-color: #EDECD6;
+    padding: 20px;
+}
+.small-container{
+    background-color: #75adc7;
+    display: flex;
+    flex-direction: column;
+    animation: sky 6s ease;
+    animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+@keyframes sky {
+    75%{
+        background-color: #546e7a;
+        background-image: url("assets/stars.png");
+    }
+    100%{
+        background-color: #546e7a;
+        background-image: url("assets/stars.png");
+    }
+}
+
+.cls-4{
+    animation: ramla 6s ease-in-out;
+    animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+@keyframes ramla {
+    75%{
+        fill: #f59896;
+    }
+    100%{
+        fill: #f59896;
+    }
+}
+.cls-3{
+    animation: ramla-dark 6s ease-in-out;
+    animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+@keyframes ramla-dark {
+    75%{
+        fill: #ef5350;
+    }
+    100%{
+        fill: #ef5350;
+    }
+}
+
+.cls-5{
+    animation: qafila 6s ease-in-out;
+    animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+.cls-6{
+    animation: qafila 6s ease-in-out;
+    animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+@keyframes qafila {
+    75%{
+        fill: #546e7a;
+    }
+    100%{
+        fill: #546e7a;
+    }
+}
+
+.ramla-container{
+    display: flex;
+}
+.sun {
+    height: 100px;
+    position: absolute;
+    width: 100px;
+    background-color: #f2d723;
+    border-radius: 50%;
+    z-index: 10;
+    animation: rise 6s ease-in-out;
+    animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+@keyframes rise {
+    0%{
+		transform: translate(-20px,200px);
+		background-color: orange;
+	}
+	25%{
+		transform: translate(230px,50px);
+		background-color: yellow;
+	}
+	50%{
+		transform: translate(560px,0px);
+	}
+	75%{
+		transform: translate(1090px,50px);
+		background-color: #FAEFA5;
+	}
+	100%{
+		transform: translate(1360px,200px);
+		background-color: #FAEFA5;
+	}
+}
+.logo-container img{
+    display: block;
+    margin: auto;
+}
+#email{
+    background-color: transparent;
+    padding-left: 20px;
+    height: 40px;
+    width: 400px;
+    border-radius: 15px;
+    border: 1px solid #546e7a;
+}
+.form-container{
+    position: absolute;
+    margin-top: 460px;
+    left: 5rem;
+    z-index: 9;
+}
+.form-container form{
+    display: flex;
+    flex-direction: column;
+}
+.label-text-element{
+    margin-bottom: .5rem;
+    font-family: 'Roboto-Bold';
+    font-size: 36.5px;
+    color: #546e7a;
+}
+.input-text-element{
+    font-family: 'Roboto-light';
+    font-size: 25px;
+    color: #546e7a;
+}
+@media (min-width:740px) {
+    .form-container{
+        margin-top: 410px;    
+    }
+    #email{
+        height: 25px;
+        width: 200px;      
+    }
+    .label-text-element{
+        font-size: 20px;
+    }
+    .input-text-element{
+        font-size: 12px;
+    }
+}
+@media (min-width:780px) {
+    .form-container{
+        margin-top: 420px;    
+    }
+    #email{
+        height: 30px;
+        width: 250px;      
+    }
+    .label-text-element{
+        font-size: 25px;
+    }
+    .input-text-element{
+        font-size: 15px;
+    }
+}
+@media (min-width:860px) {
+    .form-container{
+        margin-top: 430px;    
+    }
+    #email{
+        height: 30px;
+        width: 250px;      
+    }
+    .label-text-element{
+        font-size: 25px;
+    }
+    .input-text-element{
+        font-size: 15px;
+    }
+}
+@media (min-width:980px) {
+    .form-container{
+        margin-top: 450px;    
+    }
+    #email{
+        height: 30px;
+        width: 300px;      
+    }
+    .label-text-element{
+        font-size: 30px;
+    }
+    .input-text-element{
+        font-size: 15px;
+    }
+}
+@media (min-width:1025px) {
+    .form-container{
+        margin-top: 460px;    
+    }
+    #email{
+        height: 40px;
+        width: 400px;      
+    }
+}
+@media (min-width:1150px) {
+    .form-container{
+        margin-top: 500px;    
+    }
+    #email{
+        height: 40px;
+        width: 400px;      
+    }
+    .label-text-element{
+        font-size: 36.5px;
+    }
+}
+@media (min-width:1261px) {
+    .form-container{
+        margin-top: 520px;    
+    }
+    #email{
+        height: 40px;
+        width: 400px;      
+    }
+    .label-text-element{
+        font-size: 36.5px;
+    }
+}
+@media (min-width: 1460px) {
+    .form-container{
+        margin-top: 460px;    
+    }
+    #email{
+        height: 40px;
+        width: 400px;      
+    }
+    .label-text-element{
+        font-size: 36.5px;
+    }
+}
